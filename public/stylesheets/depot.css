@@ -122,6 +122,7 @@ h1 {
 }
 
 #store .entry img {
+  border: 0 none;
   width: 75px;
   float: left;
 }

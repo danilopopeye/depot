@@ -3,14 +3,12 @@
 <html>
 <head>
   <title>Pragprog Books Online Store</title>
-<!-- START:stylesheet -->
-  <%= stylesheet_link_tag "depot", :media => "all" %><!-- <label id="code.slt"/> -->
-<!-- END:stylesheet -->
+  <%= stylesheet_link_tag "depot", :media => "all" %>
 </head>
 <body id="store">
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
   <div id="columns">
     <div id="side">
@@ -18,9 +16,11 @@
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br />
+      <br />
+      <span class="time"><%= Time.now %></span>
     </div>
     <div id="main">
-      <%= yield :layout %><!-- <label id="code.depot.e.include"/> -->
+      <%= yield :layout %>
     </div>
   </div>
 </body>
