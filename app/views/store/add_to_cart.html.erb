@@ -1,8 +1,8 @@
 <h1>Your Pragmatic Cart</h1>
 <ul>
-	<% for item in @cart.items %>
-	<li><%= item.title %></li>
-	<% end %>
+  <% for item in @cart.items %>
+     <li><%= item.quantity %> &times; <%=h item.title %></li>
+  <% end %>
 </ul>
 
 <%= button_to "Empty cart", :action => :empty_cart %>
